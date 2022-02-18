@@ -2,7 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
-    <meta />
+    <script src="scripts.js" defer></script>
+    <meta charset="UTF-8" />
     <title>Calculator</title>
   </head>
 
@@ -13,7 +14,10 @@
     <div class="main">
       <div class="calcBody">
         <div class="centerDisplay">
-          <div class="display"></div>
+          <div class="display" id="display">
+            <div class="topDisplay" id="topDisplay"></div>
+            <div class="bottomDisplay" id="bottomDisplay"></div>
+          </div>
         </div>
 
         <div class="gap"></div>
@@ -21,28 +25,28 @@
         <div class="centerButtons">
           <div class="allButtons">
             <div class="buttonRows">
-              <div class="singleButtons">1</div>
-              <div class="singleButtons">2</div>
-              <div class="singleButtons">3</div>
-              <div class="singleButtons">+</div>
+              <button class="singleButtons" id="one">1</button>
+              <button class="singleButtons" id="two">2</button>
+              <button class="singleButtons" id="three">3</button>
+              <button class="singleButtons" id="plus">+</button>
             </div>
             <div class="buttonRows">
-              <div class="singleButtons">4</div>
-              <div class="singleButtons">5</div>
-              <div class="singleButtons">6</div>
-              <div class="singleButtons">-</div>
+              <button class="singleButtons" id="four">4</button>
+              <button class="singleButtons" id="five">5</button>
+              <button class="singleButtons" id="six">6</button>
+              <button class="singleButtons" id="minus">-</button>
             </div>
             <div class="buttonRows">
-              <div class="singleButtons">7</div>
-              <div class="singleButtons">8</div>
-              <div class="singleButtons">9</div>
-              <div class="singleButtons">*</div>
+              <button class="singleButtons" id="seven">7</button>
+              <button class="singleButtons" id="eight">8</button>
+              <button class="singleButtons" id="nine">9</button>
+              <button class="singleButtons" id="times">*</button>
             </div>
             <div class="buttonRows">
-              <div class="singleButtons">Reset</div>
-              <div class="singleButtons">0</div>
-              <div class="singleButtons">=</div>
-              <div class="singleButtons">/</div>
+              <button class="singleButtons" id="reset">Reset</button>
+              <button class="singleButtons" id="zero">0</button>
+              <button class="singleButtons" id="equals">=</button>
+              <button class="singleButtons" id="divide">/</button>
             </div>
           </div>
         </div>
